@@ -1,0 +1,9 @@
+- hosts: worker
+  become: yes
+  tasks:
+    - name: test connection
+      become: yes
+      apt:
+          upgrade: yes
+          update_cache: yes
+      

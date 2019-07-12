@@ -1,0 +1,2 @@
+ansible test command
+    ansible -m ping -i ansible_host all 
