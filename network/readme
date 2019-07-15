@@ -1,2 +1,7 @@
 ansible test command
     ansible -m ping -i ansible_host all 
+        -> ansible이 정상 동작을 하는지 판단하는 command
+
+    ansible-playbook network_playbook.yml -i ansible_host --extra-vars "ansible_sudo_pass=xiirocks"
+        -> network_playbook.yml	을 ansible_host에 있는 호스트들에게 실행한다. 단 become password는 xiirocks이다
+

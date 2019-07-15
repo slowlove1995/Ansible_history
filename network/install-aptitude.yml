@@ -1,4 +1,5 @@
 - hosts: worker
   tasks:
     - name : install aptitude
+      become: yes
       raw: sudo apt-get -y install aptitude

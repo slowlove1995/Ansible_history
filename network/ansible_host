@@ -1,3 +1,10 @@
 [worker]
 192.168.0.4 ansible_user=worker2
 192.168.0.2 ansible_user=worker3
+192.168.0.3 ansible_user=worker1 
+
+[iworker]
+10.33.2.10 ansible_user=worker1
+10.33.2.11 ansible_user=worker2
+10.33.2.3 ansible_user=worker3
+
